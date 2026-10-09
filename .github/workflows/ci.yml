@@ -1,0 +1,29 @@
+name: tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  core:
+    name: data audit + statistics (no deep learning)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: pip install -e ".[dev]" h5py
+      - run: ruff check --output-format=github src tests
+      - run: pytest -q
+
+  deep-learning:
+    name: end-to-end with TensorFlow (synthetic images)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: pip install tensorflow-cpu h5py shap -e ".[dev]"
+      - run: pytest -q tests/test_tf_pipeline.py tests/test_figshare.py

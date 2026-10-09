@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+.ipynb_checkpoints/
+.DS_Store
+
+# data, models and intermediate artefacts are reproducible - never committed
+data/*
+!data/README.md
+artifacts/
+results_bundle.zip
+*.keras

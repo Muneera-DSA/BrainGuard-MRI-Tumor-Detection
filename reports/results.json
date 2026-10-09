@@ -1,0 +1,520 @@
+{
+  "main": {
+    "n_images": 3064,
+    "n_patients": 233,
+    "accuracy": {
+      "value": 0.8841383812010444,
+      "ci": [
+        0.8548448725930566,
+        0.91136949141534
+      ],
+      "share_le_0": 0.0,
+      "n_boot": 2000
+    },
+    "balanced_accuracy": {
+      "value": 0.8645297316714342,
+      "ci": [
+        0.8354742799216961,
+        0.8908112282399964
+      ],
+      "share_le_0": 0.0,
+      "n_boot": 2000
+    },
+    "macro_f1": {
+      "value": 0.8651330498054257,
+      "ci": [
+        0.8331283988485935,
+        0.8921617176997383
+      ],
+      "share_le_0": 0.0,
+      "n_boot": 2000
+    },
+    "cohen_kappa": 0.8178008191023376,
+    "macro_auc": {
+      "value": 0.970560361725083,
+      "ci": [
+        0.9514690855358904,
+        0.9847872769972067
+      ],
+      "share_le_0": 0.0,
+      "n_boot": 2000
+    },
+    "ece": 0.045163423531331584,
+    "brier": 0.1703388444147547,
+    "confusion": [
+      [
+        1300,
+        105,
+        21
+      ],
+      [
+        112,
+        495,
+        101
+      ],
+      [
+        7,
+        9,
+        914
+      ]
+    ],
+    "per_class": {
+      "glioma": {
+        "n": 1426,
+        "sensitivity": {
+          "value": 0.9116409537166901,
+          "ci": [
+            0.8755683851996953,
+            0.9455290221228906
+          ],
+          "share_le_0": 0.0,
+          "n_boot": 2000
+        },
+        "specificity": {
+          "value": 0.9273504273504274,
+          "ci": [
+            0.8981028708027772,
+            0.9508130297292423
+          ],
+          "share_le_0": 0.0,
+          "n_boot": 2000
+        },
+        "precision": {
+          "value": 0.916138125440451,
+          "ci": [
+            0.8726989082388877,
+            0.9478320869193202
+          ],
+          "share_le_0": 0.0,
+          "n_boot": 2000
+        },
+        "auc": {
+          "value": 0.981092890279426,
+          "ci": [
+            0.9706996832668141,
+            0.9889966683866603
+          ],
+          "share_le_0": 0.0,
+          "n_boot": 2000
+        }
+      },
+      "meningioma": {
+        "n": 708,
+        "sensitivity": {
+          "value": 0.6991525423728814,
+          "ci": [
+            0.6195282952424552,
+            0.7750421198249975
+          ],
+          "share_le_0": 0.0,
+          "n_boot": 2000
+        },
+        "specificity": {
+          "value": 0.9516129032258065,
+          "ci": [
+            0.9308116880861812,
+            0.9708619079903648
+          ],
+          "share_le_0": 0.0,
+          "n_boot": 2000
+        },
+        "precision": {
+          "value": 0.812807881773399,
+          "ci": [
+            0.725767256159362,
+            0.8864538558786346
+          ],
+          "share_le_0": 0.0,
+          "n_boot": 2000
+        },
+        "auc": {
+          "value": 0.9410748371749494,
+          "ci": [
+            0.898896690558119,
+            0.9711930689679995
+          ],
+          "share_le_0": 0.0,
+          "n_boot": 2000
+        }
+      },
+      "pituitary": {
+        "n": 930,
+        "sensitivity": {
+          "value": 0.9827956989247312,
+          "ci": [
+            0.9616097417333711,
+            0.9976564133627068
+          ],
+          "share_le_0": 0.0,
+          "n_boot": 2000
+        },
+        "specificity": {
+          "value": 0.9428303655107779,
+          "ci": [
+            0.9149337227358267,
+            0.9656807931310395
+          ],
+          "share_le_0": 0.0,
+          "n_boot": 2000
+        },
+        "precision": {
+          "value": 0.8822393822393823,
+          "ci": [
+            0.8196538645006559,
+            0.9300545295636292
+          ],
+          "share_le_0": 0.0,
+          "n_boot": 2000
+        },
+        "auc": {
+          "value": 0.9895133577208736,
+          "ci": [
+            0.9741353600499132,
+            0.9980899823856475
+          ],
+          "share_le_0": 0.0,
+          "n_boot": 2000
+        }
+      }
+    },
+    "fold_accuracy": {
+      "mean": 0.8839301778628992,
+      "sd": 0.016469800458517474,
+      "per_fold": [
+        0.8821705426356589,
+        0.8619402985074627,
+        0.9036544850498339,
+        0.8759124087591241,
+        0.8959731543624161
+      ]
+    }
+  },
+  "compare_effnet_image": {
+    "a": "effnet_image",
+    "b": "effnet_patient",
+    "n_images": 3064,
+    "balanced_accuracy_a": 0.9164417608946573,
+    "balanced_accuracy_b": 0.8645297316714342,
+    "diff_balanced_accuracy": {
+      "value": 0.05191202922322313,
+      "ci": [
+        0.03473846504465006,
+        0.0702603916796091
+      ],
+      "share_le_0": 0.0,
+      "n_boot": 2000
+    },
+    "mcnemar": {
+      "a_right_b_wrong": 201,
+      "b_right_a_wrong": 49,
+      "p": 4.880805282654338e-23,
+      "acc_a": 0.9337467362924282,
+      "acc_b": 0.8841383812010444
+    },
+    "per_class_sensitivity_diff": {
+      "glioma": 0.0568022440392707,
+      "meningioma": 0.09463276836158185,
+      "pituitary": 0.004301075268817178
+    }
+  },
+  "leakage": {
+    "accuracy_image_split": 0.9337467362924282,
+    "accuracy_patient_split": 0.8841383812010444
+  },
+  "compare_cnn_patient": {
+    "a": "cnn_patient",
+    "b": "effnet_patient",
+    "n_images": 3064,
+    "balanced_accuracy_a": 0.872087120281667,
+    "balanced_accuracy_b": 0.8645297316714342,
+    "diff_balanced_accuracy": {
+      "value": 0.007557388610232807,
+      "ci": [
+        -0.017097871714911006,
+        0.030870834168856772
+      ],
+      "share_le_0": 0.2725,
+      "n_boot": 2000
+    },
+    "mcnemar": {
+      "a_right_b_wrong": 171,
+      "b_right_a_wrong": 173,
+      "p": 0.9570122000008058,
+      "acc_a": 0.883485639686684,
+      "acc_b": 0.8841383812010444
+    },
+    "per_class_sensitivity_diff": {
+      "glioma": -0.016830294530154277,
+      "meningioma": 0.06638418079096042,
+      "pituitary": -0.026881720430107503
+    }
+  },
+  "compare_effnet_patient_cw": {
+    "a": "effnet_patient_cw",
+    "b": "effnet_patient",
+    "n_images": 3064,
+    "balanced_accuracy_a": 0.8756119206662388,
+    "balanced_accuracy_b": 0.8645297316714342,
+    "diff_balanced_accuracy": {
+      "value": 0.01108218899480462,
+      "ci": [
+        0.0012784100296065063,
+        0.02075047940979337
+      ],
+      "share_le_0": 0.0165,
+      "n_boot": 2000
+    },
+    "mcnemar": {
+      "a_right_b_wrong": 73,
+      "b_right_a_wrong": 55,
+      "p": 0.1326248013249822,
+      "acc_a": 0.8900130548302873,
+      "acc_b": 0.8841383812010444
+    },
+    "per_class_sensitivity_diff": {
+      "glioma": -0.007713884992987419,
+      "meningioma": 0.04096045197740106,
+      "pituitary": 0.0
+    }
+  },
+  "kaggle": {
+    "n_test": 1311,
+    "accuracy_as_published": 0.9672006102212052,
+    "balanced_accuracy": 0.9646278140885984,
+    "copy_in_train": {
+      "label": "test image has a near-copy in Training",
+      "n_flagged": 710,
+      "acc_flagged": 0.9929577464788732,
+      "acc_not_flagged": 0.9367720465890182,
+      "fisher": {
+        "rate_1": 0.007042253521126761,
+        "rate_2": 0.0632279534109817,
+        "odds_ratio": 0.10507652108995894,
+        "p": 5.493547076555029e-09
+      }
+    },
+    "patient_in_train": {
+      "label": "test image's patient is in Training",
+      "n_flagged": 171,
+      "acc_flagged": 0.9766081871345029,
+      "acc_not_flagged": 0.9657894736842105,
+      "fisher": {
+        "rate_1": 0.023391812865497075,
+        "rate_2": 0.034210526315789476,
+        "odds_ratio": 0.676186089359742,
+        "p": 0.6446714932533091
+      }
+    },
+    "accuracy_by_size_group": {
+      "512x512": 0.9479034307496823,
+      "other size": 0.9961832061068703
+    }
+  },
+  "explain": {
+    "n_images": 150,
+    "n_patients": 114,
+    "shap": {
+      "median_energy_in_mask": 0.03478092700242995,
+      "median_mask_fraction": 0.01154934630102035,
+      "median_ratio_to_chance": 2.5477903576232257,
+      "wilcoxon_p_energy_above_chance": 1.354537461945616e-25,
+      "pointing_hit_rate": 0.32666666666666666,
+      "pointing_chance_rate": 0.021704267644557778,
+      "pointing_p_above_chance": 7.959468462912485e-147,
+      "energy_correct_vs_incorrect": {
+        "median_correct": 0.0334250330924987,
+        "median_incorrect": 0.0405884869396686,
+        "mannwhitney_p": 0.1574993429195073
+      }
+    },
+    "cam": {
+      "median_energy_in_mask": 0.02462850417941805,
+      "median_mask_fraction": 0.01154934630102035,
+      "median_ratio_to_chance": 2.1633186641992888,
+      "wilcoxon_p_energy_above_chance": 2.0061751339556987e-16,
+      "pointing_hit_rate": 0.2,
+      "pointing_chance_rate": 0.021704267644557778,
+      "pointing_p_above_chance": 1.2625309116975094e-51,
+      "energy_correct_vs_incorrect": {
+        "median_correct": 0.0248485095798969,
+        "median_incorrect": 0.0242855530232191,
+        "mannwhitney_p": 0.277946342733574
+      }
+    },
+    "shap_completeness_r": 0.9123315312677147,
+    "sanity": {
+      "median_shap_similarity_trained_vs_random": 0.7740023681073004,
+      "median_cam_similarity_trained_vs_random": 0.161639629748215,
+      "median_energy_trained": 0.0651911944150924,
+      "median_energy_random": 0.03144371975213285,
+      "wilcoxon_p_trained_gt_random": NaN
+    },
+    "shap_library_crosscheck": {
+      "status": "ok",
+      "shap_version": "0.52.0",
+      "pearson_r_per_image": [
+        0.8952439989302683,
+        0.7652510587847503,
+        0.9542202030558379
+      ]
+    }
+  },
+  "robustness": [
+    {
+      "perturbation": "clean",
+      "balanced_accuracy": 0.8645297316714342,
+      "drop_vs_clean": 0.0,
+      "mcnemar_p": NaN,
+      "mcnemar_p_holm": NaN
+    },
+    {
+      "perturbation": "brightness +15%",
+      "balanced_accuracy": 0.8811322150115029,
+      "drop_vs_clean": -0.01660248334006864,
+      "mcnemar_p": 0.017209595585930455,
+      "mcnemar_p_holm": 0.05162878675779137
+    },
+    {
+      "perturbation": "brightness -15%",
+      "balanced_accuracy": 0.859698285539206,
+      "drop_vs_clean": 0.00483144613222819,
+      "mcnemar_p": 0.003472253666248758,
+      "mcnemar_p_holm": 0.015915922241088298
+    },
+    {
+      "perturbation": "contrast x0.7",
+      "balanced_accuracy": 0.8245213323719041,
+      "drop_vs_clean": 0.04000839929953015,
+      "mcnemar_p": 8.695970402474059e-07,
+      "mcnemar_p_holm": 6.956776321979247e-06
+    },
+    {
+      "perturbation": "contrast x1.3",
+      "balanced_accuracy": 0.8828341296820151,
+      "drop_vs_clean": -0.018304398010580925,
+      "mcnemar_p": 0.029171626999401647,
+      "mcnemar_p_holm": 0.058343253998803295
+    },
+    {
+      "perturbation": "gamma 0.7",
+      "balanced_accuracy": 0.8532435030889877,
+      "drop_vs_clean": 0.011286228582446545,
+      "mcnemar_p": 0.0026424928957725444,
+      "mcnemar_p_holm": 0.015854957374635267
+    },
+    {
+      "perturbation": "gamma 1.5",
+      "balanced_accuracy": 0.8787687894707649,
+      "drop_vs_clean": -0.014239057799330657,
+      "mcnemar_p": 0.0031831844482176595,
+      "mcnemar_p_holm": 0.015915922241088298
+    },
+    {
+      "perturbation": "gaussian noise sd 8",
+      "balanced_accuracy": 0.8077552211683479,
+      "drop_vs_clean": 0.05677451050308635,
+      "mcnemar_p": 3.006652044793727e-21,
+      "mcnemar_p_holm": 3.006652044793727e-20
+    },
+    {
+      "perturbation": "gaussian noise sd 16",
+      "balanced_accuracy": 0.7998737463781321,
+      "drop_vs_clean": 0.06465598529330208,
+      "mcnemar_p": 1.3760213772697634e-21,
+      "mcnemar_p_holm": 1.5136235149967398e-20
+    },
+    {
+      "perturbation": "blur sigma 1.5",
+      "balanced_accuracy": 0.7510870225539682,
+      "drop_vs_clean": 0.11344270911746601,
+      "mcnemar_p": 1.6624231363392271e-41,
+      "mcnemar_p_holm": 1.9949077636070725e-40
+    },
+    {
+      "perturbation": "rotation 10 deg",
+      "balanced_accuracy": 0.8800253827888316,
+      "drop_vs_clean": -0.015495651117397369,
+      "mcnemar_p": 0.0015398549685237176,
+      "mcnemar_p_holm": 0.010778984779666023
+    },
+    {
+      "perturbation": "JPEG quality 30",
+      "balanced_accuracy": 0.8612382891841849,
+      "drop_vs_clean": 0.0032914424872493298,
+      "mcnemar_p": 0.828663429173007,
+      "mcnemar_p_holm": 0.828663429173007
+    },
+    {
+      "perturbation": "half resolution",
+      "balanced_accuracy": 0.8185545280940723,
+      "drop_vs_clean": 0.045975203577361956,
+      "mcnemar_p": 1.5033044448590262e-13,
+      "mcnemar_p_holm": 1.3529740003731236e-12
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "H4",
+      "hypothesis": "Meningioma is detected less reliably than the other classes",
+      "evidence": "sensitivity difference -24.1% (CI -32.3% to -16.4%)",
+      "p": 0.0005,
+      "direction_ok": true,
+      "p_holm": 0.002,
+      "verdict": "supported"
+    },
+    {
+      "id": "H1",
+      "hypothesis": "Image-level CV overstates accuracy versus patient-level CV (leakage)",
+      "evidence": "balanced accuracy 91.6% (effnet_image) vs 86.5% (main); McNemar 201/49 discordant",
+      "p": 4.880805282654338e-23,
+      "direction_ok": true,
+      "p_holm": 2.9284831695926027e-22,
+      "verdict": "supported"
+    },
+    {
+      "id": "H2",
+      "hypothesis": "Transfer learning (EfficientNetB0) beats the baseline CNN",
+      "evidence": "balanced accuracy 87.2% (cnn_patient) vs 86.5% (main); McNemar 171/173 discordant",
+      "p": 0.9570122000008058,
+      "direction_ok": false,
+      "p_holm": 1.0,
+      "verdict": "not supported"
+    },
+    {
+      "id": "H3",
+      "hypothesis": "Class weighting improves balanced accuracy",
+      "evidence": "balanced accuracy 87.6% (effnet_patient_cw) vs 86.5% (main); McNemar 73/55 discordant",
+      "p": 0.1326248013249822,
+      "direction_ok": true,
+      "p_holm": 0.39787440397494656,
+      "verdict": "not supported"
+    },
+    {
+      "id": "H5a",
+      "hypothesis": "Kaggle accuracy is higher when the image has a near-copy in Training",
+      "evidence": "99.3% vs 93.7%",
+      "p": 5.493547076555029e-09,
+      "direction_ok": true,
+      "p_holm": 2.7467735382775145e-08,
+      "verdict": "supported"
+    },
+    {
+      "id": "H5b",
+      "hypothesis": "Kaggle accuracy is higher when the image's patient is in Training",
+      "evidence": "97.7% vs 96.6%",
+      "p": 0.6446714932533091,
+      "direction_ok": true,
+      "p_holm": 1.0,
+      "verdict": "not supported"
+    },
+    {
+      "id": "H6",
+      "hypothesis": "SHAP attribution concentrates on the tumour more than chance",
+      "evidence": "median 3.5% inside vs 1.2% area",
+      "p": 1.354537461945616e-25,
+      "direction_ok": true,
+      "p_holm": 9.481762233619312e-25,
+      "verdict": "supported"
+    }
+  ]
+}
