@@ -1,0 +1,30 @@
+{
+  "kaggle_tumour_images": 5023,
+  "matched_to_figshare": 1744,
+  "matched_share_of_tumour_images": 0.34720286681266177,
+  "matched_no_tumour_images": 0,
+  "label_agreement_share": 0.9948394495412844,
+  "label_disagreements": 9,
+  "distinct_figshare_slices_used": 1699,
+  "kaggle_images_sharing_a_figshare_slice": 87,
+  "patients_in_kaggle_train": 206,
+  "patients_in_kaggle_test": 120,
+  "patients_in_both": 114,
+  "matched_test_images": 178,
+  "test_images_from_training_patients": 171,
+  "test_images_from_training_patients_share": 0.9606741573033708,
+  "by_class": {
+    "glioma": {
+      "tumour_images": 1621,
+      "matched": 239
+    },
+    "meningioma": {
+      "tumour_images": 1645,
+      "matched": 690
+    },
+    "pituitary": {
+      "tumour_images": 1757,
+      "matched": 815
+    }
+  }
+}

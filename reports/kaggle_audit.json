@@ -1,0 +1,157 @@
+{
+  "n_images": 7023,
+  "by_split_and_class": {
+    "test/glioma": 300,
+    "test/meningioma": 306,
+    "test/notumor": 405,
+    "test/pituitary": 300,
+    "train/glioma": 1321,
+    "train/meningioma": 1339,
+    "train/notumor": 1595,
+    "train/pituitary": 1457
+  },
+  "exact": {
+    "groups_with_more_than_one_image": 194,
+    "images_in_those_groups": 491,
+    "groups_spanning_train_and_test": 79,
+    "test_images_with_a_copy_in_train": 103,
+    "test_images_with_a_copy_in_train_share": 0.07856598016781083,
+    "groups_with_conflicting_labels": 0,
+    "images_in_label_conflict_groups": 0
+  },
+  "near": {
+    "groups_with_more_than_one_image": 808,
+    "images_in_those_groups": 3226,
+    "groups_spanning_train_and_test": 502,
+    "test_images_with_a_copy_in_train": 710,
+    "test_images_with_a_copy_in_train_share": 0.5415713196033562,
+    "groups_with_conflicting_labels": 1,
+    "images_in_label_conflict_groups": 2
+  },
+  "dup_correlation": 0.95,
+  "candidate_pairs": 79018,
+  "pair_label_agreement_by_correlation": [
+    {
+      "corr_from": -1,
+      "corr_to": 0.8,
+      "pairs": 59764,
+      "different_label_pairs": 30015
+    },
+    {
+      "corr_from": 0.8,
+      "corr_to": 0.9,
+      "pairs": 8792,
+      "different_label_pairs": 2851
+    },
+    {
+      "corr_from": 0.9,
+      "corr_to": 0.95,
+      "pairs": 2853,
+      "different_label_pairs": 61
+    },
+    {
+      "corr_from": 0.95,
+      "corr_to": 0.98,
+      "pairs": 2190,
+      "different_label_pairs": 1
+    },
+    {
+      "corr_from": 0.98,
+      "corr_to": 1.01,
+      "pairs": 5419,
+      "different_label_pairs": 0
+    }
+  ],
+  "threshold_sensitivity": [
+    {
+      "min_correlation": 0.9,
+      "n_groups": 2852,
+      "groups_with_more_than_one_image": 1231,
+      "images_in_those_groups": 5402,
+      "groups_spanning_train_and_test": 724,
+      "test_images_with_a_copy_in_train": 1046,
+      "test_images_with_a_copy_in_train_share": 0.7978642257818459,
+      "groups_with_conflicting_labels": 15,
+      "images_in_label_conflict_groups": 320
+    },
+    {
+      "min_correlation": 0.95,
+      "n_groups": 4605,
+      "groups_with_more_than_one_image": 808,
+      "images_in_those_groups": 3226,
+      "groups_spanning_train_and_test": 502,
+      "test_images_with_a_copy_in_train": 710,
+      "test_images_with_a_copy_in_train_share": 0.5415713196033562,
+      "groups_with_conflicting_labels": 1,
+      "images_in_label_conflict_groups": 2
+    },
+    {
+      "min_correlation": 0.98,
+      "n_groups": 5441,
+      "groups_with_more_than_one_image": 520,
+      "images_in_those_groups": 2102,
+      "groups_spanning_train_and_test": 341,
+      "test_images_with_a_copy_in_train": 504,
+      "test_images_with_a_copy_in_train_share": 0.38443935926773454,
+      "groups_with_conflicting_labels": 0,
+      "images_in_label_conflict_groups": 0
+    },
+    {
+      "min_correlation": 0.995,
+      "n_groups": 5714,
+      "groups_with_more_than_one_image": 588,
+      "images_in_those_groups": 1897,
+      "groups_spanning_train_and_test": 357,
+      "test_images_with_a_copy_in_train": 477,
+      "test_images_with_a_copy_in_train_share": 0.36384439359267734,
+      "groups_with_conflicting_labels": 0,
+      "images_in_label_conflict_groups": 0
+    }
+  ],
+  "size_by_class": {
+    "glioma": {
+      "512x512": 1621,
+      "other size": 0
+    },
+    "meningioma": {
+      "512x512": 1387,
+      "other size": 258
+    },
+    "notumor": {
+      "512x512": 20,
+      "other size": 1980
+    },
+    "pituitary": {
+      "512x512": 1714,
+      "other size": 43
+    }
+  },
+  "mode_by_class": {
+    "glioma": {
+      "L": 1426,
+      "P": 0,
+      "RGB": 195,
+      "RGBA": 0
+    },
+    "meningioma": {
+      "L": 708,
+      "P": 0,
+      "RGB": 937,
+      "RGBA": 0
+    },
+    "notumor": {
+      "L": 29,
+      "P": 1,
+      "RGB": 1967,
+      "RGBA": 3
+    },
+    "pituitary": {
+      "L": 930,
+      "P": 0,
+      "RGB": 827,
+      "RGBA": 0
+    }
+  },
+  "size_vs_class_cramers_v": 0.9048013116983139,
+  "size_vs_class_chi2_p": 0.0
+}
